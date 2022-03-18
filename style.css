@@ -85,8 +85,8 @@
 }
 
 @media screen and (max-width: 419px){
-  .first h3{
-    background-color: red;
+  #why{
+    width: 100%;
   }
 }
 
