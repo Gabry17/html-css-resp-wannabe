@@ -24,29 +24,42 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 420px){
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #lezioni h1{
+    padding-top: 1em;
+  }
   #lezioni .row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: lightgray;
+    
   }
   #lezioni .left{
-    margin: 2em 0;
+    margin: 1em 0;
   }
-  #lezioni .left img{
+  #lezioni .right{
+    margin: 1em 0;
+  }
+  .left img{
     float: left;
-    margin-right: 1em;
   }
-  #lezioni .right img{
-    float: right;
-    margin-left: 1em;
+  .right img{
+    float: left;
   }
 }
 
 @media screen and (max-width: 419px){
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #lezioni h1{
+    padding-top: 1em;
+  }
   #lezioni .row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #8ac5f9;
   }
   .row>.left,
@@ -67,17 +80,38 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) and (min-width: 420px){
+  #steps .row{
+    background-color: rgb(165, 235, 247);
+  }
+
+  #steps h1{
+    padding-top: 1em;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    margin: 2em 0;
+    width: 100%;
+  }
+  #steps img{
+    float: right;
+  }
+}
+
 @media screen and (max-width: 419px){
-  .row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #steps .row{
     background-color: lightgray;
   }
-  .row>.left,
-  .row>.central,
-  .row>.right {
-    margin-bottom: 2em;
+
+  #steps h1{
+    padding-top: 1em;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    margin: 2em 0;
+    width: 100%;
   }
 }
 /* BLOCCO PERCHE */
@@ -98,12 +132,41 @@
   padding: 30px
 }
 
+@media screen and (max-width: 768px) and (min-width: 420px){
+  #why .row{
+    background-color: lightgray;
+  }
+
+  #why h1{
+    padding-top: 1em;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }   
+  #why img{
+    width: 20%;
+    margin: 0 auto;
+  }
+
+}
+
 @media screen and (max-width: 419px){
   #why{
     width: 100%;
   }
+  #why h1{
+    padding-top: 1em;
+  }
   #why .row{
     background-color: #8ac5f9;
+  }
+  #why img{
+    float:right;
   }
 }
 
